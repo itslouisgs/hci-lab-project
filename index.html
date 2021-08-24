@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="icon" href="assets/logo/icon.png" type="image/gif" sizes="20x20">
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+
+	<title>DanBam</title>
+</head>
+
+<body>
+	<!-- DanBam wants this page to show the banner, DamBam information, menu recommendation for the customer, and DanBam location.  -->
+	<nav class="nav-transparent">
+        <div class="container">
+            <a href="#" class="nav-left">
+                <img src="assets/logo/danbam.png" class="icon" alt="" href="#Home">
+                <p>DanBam</p>
+            </a>
+            <div class="nav-right">
+            <ul>
+                <li class="nav-active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html">About</a>
+                    <div class="ddown-content">
+                        <ul>
+                            <li><a href="about.html#History">History</a></li>
+                            <li><a href="about.html#Core_Values">Core Values</a></li>
+                            <li><a href="about.html#Gallery">Gallery</a></li>
+                        </ul>
+                    </div>      
+                </li>
+                <li class="dropdown">
+                    <a href="menu.html">Menu</a>
+                    <div class="ddown-content">
+                        <ul>
+                            <li><a href="menu.html#Dishes">Dishes</a></li>
+                            <li><a href="menu.html#Beverages">Beverages</a></li>
+                            <li><a href="menu.html#Desserts">Desserts</a></li>
+                        </ul>
+                    </div>    
+                </li>
+                <li class="dropdown">
+                    <a href="location.html">Location</a>
+                    <div class="ddown-content">
+                        <ul>
+                            <li><a href="location.html#Seoul">Seoul</a></li>
+                            <li><a href="location.html#Gwangju">Gwangju</a></li>
+                            <li><a href="location.html#Yangsan">Yangsan</a></li>
+                            <li><a href="location.html#Sangju">Sangju</a></li>
+                        </ul>
+                    </div>    
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            </div>
+
+            <!-- Hamburger nav -->
+        
+            <div class="nav-hamburger">
+                <input type="checkbox" id="hamburger" class="input-none"/>
+                <label for="hamburger">
+                    <img src="assets/icon/hamburger.png" alt="" id="ic-hamburger">
+                </label>
+
+
+                <div class="nav-hamburger-content">
+                    <ul>
+                        <li class="nav-active"><a href="#">Home</a></li>
+                        <li>
+                            <a href="about.html">About</a>
+                            <input type="checkbox" id="dropdown-abt" class="input-none"/>
+                            <label for="dropdown-abt">
+                                <i class="fa fa-chevron-down"></i>
+                            </label>
+
+                            <ul class="nav-hamburger-subcontent">
+                                <li><a href="about.html#History">History</a></li>
+                                <li><a href="about.html#Core_Values">Core Values</a></li>
+                                <li><a href="about.html#Gallery">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="menu.html">Menu</a>
+                            <input type="checkbox" id="dropdown-menu" class="input-none"/>
+                            <label for="dropdown-menu">
+                                <i class="fa fa-chevron-down"></i>
+                            </label>
+
+                            <ul class="nav-hamburger-subcontent">
+                                <li><a href="menu.html#Dishes">Dishes</a></li>
+                                <li><a href="menu.html#Beverages">Beverages</a></li>
+                                <li><a href="menu.html#Desserts">Desserts</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="location.html">Location</a>
+                            <input type="checkbox" id="dropdown-location" class="input-none"/>
+                            <label for="dropdown-location">
+                                <i class="fa fa-chevron-down"></i>
+                            </label>
+
+                            <ul class="nav-hamburger-subcontent">
+                                <li><a href="location.html#Seoul">Seoul</a></li>
+                                <li><a href="location.html#Gwangju">Gwangju</a></li>
+                                <li><a href="location.html#Yangsan">Yangsan</a></li>
+                                <li><a href="location.html#Sangju">Sangju</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner TBA -->
+    <div id="Home" class="banner banner-home">
+        <div class="container">
+            <h1>Welcome to DanBam</h1>
+            <p>We package a collection of authentic Korean traditional food in a modern and innovative way.</p>
+            <div class="button-container">
+                <a href="#About" class="button banner-button">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="About" class="about">
+        <div class="container about-container">
+            <div class="about-img">
+                <img src="assets/about/restaurant.jpg" alt="" />
+            </div>
+            <div class="about-p">
+                <h2>About Us</h2>
+                <h3>Taste Something Best</h3>
+                <p>Since its founding in 2010, DanBam has strived to provide quality traditional Korean food packed in a modern and innovative way. DanBam offers a truly authentic experience that keeps clients coming back for more. Our talented team works around the clock to offer fresh flavors and dishes.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div id="Menu" class="menu">
+        <div class="container">
+            <h2>Menu</h2>
+            <h3>Our Recommendations</h3>
+            <div class="menu-content">
+                <div class="menu-one-third">
+                    <div class="menu-img-container">
+                        <img src="assets/menu/dishes/Bibimbap.png" alt="Bibimbap">
+                    </div>
+                    <div class="menu-det">
+                        <strong>Bibimbap</strong>
+                        <p>비빔밥</p>
+                        <p>Mixed rice and vegetables.</p>
+                        <strong><p>₩ 6.000</p></strong>
+                    </div>
+                </div>
+                <div class="menu-one-third">
+                    <div class="menu-img-container">
+                        <img id="patbingsoo" src="assets/menu/desserts/PatBingSoo.png" alt="PatBingSoo">
+                    </div>
+                    <div class="menu-det">
+                        <strong>Pat Bing Soo</strong>
+                        <p>팥빙수</p>
+                        <p>Red bean shaved ice with matcha.</p>
+                        <strong><p>₩ 5.500</p></strong>
+                    </div>
+                </div>
+                <div class="menu-one-third">
+                    <div class="menu-img-container">
+                        <img src="assets/menu/dishes/KimchiJjigae.png" alt="KimchiJjigae">
+                    </div>
+                    <div class="menu-det">
+                        <strong>Kimchi Jjigae</strong>
+                        <p>김치찌개</p>
+                        <p>Kimchi stew with tofu and beef.</p>
+                        <strong><p>₩ 9.000</p></strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="Contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-left">
+                <div>
+                    <h2>Get in Touch with Us</h2>
+                    <div class="contact-flex">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>57-26 Itaewon 1(il)-dong, Yongsan-gu, Seoul, South Korea</p>
+                    </div>
+                    <div class="contact-flex">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+82 100-5555-8181</p>
+                    </div>
+                    <div class="social">
+                        <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="http://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <a href="contact.html" class="button contact-button">Contact Us</a>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.243162157651!2d126.98728067701747!3d37.53458037635295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3708d1d7d1f%3A0xb2011902448600b6!2sDanbam!5e0!3m2!1sen!2sid!4v1617202702227!5m2!1sen!2sid" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div>
+                    <div class="footer-section">
+                        <h6>DanBam</h6>
+                        <p><a href="about.html#History">History</a></p>
+                        <p><a href="about.html#Core_Values">Core Values</a></p>
+                        <p><a href="about.html#Gallery">Gallery</a></p>
+                    </div>
+                    <div class="footer-section">
+                        <h6>Menu</h6>
+                        <p><a href="menu.html#Dishes">Dishes</a></p>
+                        <p><a href="menu.html#Beverages">Beverages</a></p>
+                        <p><a href="menu.html#Desserts">Desserts</a></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-section">
+                        <h6>Location</h6>
+                        <p><a href="location.html#Seoul">Seoul</a></p>
+                        <p><a href="location.html#Gwangju">Gwangju</a></p>
+                        <p><a href="location.html#Yangsan">Yangsan</a></p>
+                        <p><a href="location.html#Sangju">Sangju</a></p>
+                    </div>
+                    <div class="footer-section">
+                        <h6>Get in Touch</h6>
+                        <p><a href="contact.html">Contact</a></p>
+                    </div> 
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social">
+                    <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="http://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p>© 2021 DanBam.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

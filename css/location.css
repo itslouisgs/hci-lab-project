@@ -1,0 +1,55 @@
+.location-container{
+    background-color: #f0f0f0;
+    padding: 0 7.5%;
+}
+
+.location-list{
+    display: flex;
+    justify-content: space-between;
+    height: 325px;
+    padding-top: 7.5%;
+}
+
+.location-list:last-child{
+    padding-bottom: 7.5%;
+}
+
+.location-list h2{
+    text-align: left;
+    padding-bottom: 0.5em;
+}
+
+.contact-info{
+    width: 45%;
+}
+
+.contact-flex{
+    justify-content: left;
+    padding-left: 0;
+    text-align: left;
+}
+
+.contact-flex i{
+    color: #232323;
+}
+
+iframe{
+    width: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+    .location-list{
+        display: block;
+        height: auto;
+    }
+
+    .contact-info,
+    iframe{
+        width: 100%;
+    }
+
+    iframe{
+        margin: 1.5em 0;
+        height: 300px;
+    }
+}

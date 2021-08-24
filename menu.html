@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu | DanBam</title>
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="icon" href="assets/logo/icon.png" type="image/gif" sizes="20x20">
+	<link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css">
+    
+	<script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/slider.js"></script>
+    
+</head>
+
+<body>
+	<!-- This page provides All Menu from DanBam based on their category such as Food, Drink, and Dessert. This page also shows the name of the menu, the price of the menu and provide a button for customers to order. DanBam also wants to have an image-slider using JQuery animation effect on this page to show the latest menu, & promotion. -->
+	<nav class="nav-scrolled">
+		<div class="container">
+			<a href="index.html" class="nav-left">
+				<img src="assets/logo/danbam.png" class="icon" alt="" href="#Home">
+            <p>DanBam</p>
+            </a>
+            <div class="nav-right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                <a href="about.html">About</a>
+                <div class="ddown-content">
+                    <ul>
+                    <li><a href="about.html#History">History</a></li>
+                    <li><a href="about.html#Core_Values">Core Values</a></li>
+                    <li><a href="about.html#Gallery">Gallery</a></li>
+                    </ul>
+                </div>      
+                </li>
+                <li class="dropdown">
+                <a href="#" class="nav-active">Menu</a>
+                <div class="ddown-content">
+                    <ul>
+                    <li><a href="#Dishes">Dishes</a></li>
+                    <li><a href="#Beverages">Beverages</a></li>
+                    <li><a href="#Desserts">Desserts</a></li>
+                    </ul>
+                </div>    
+                </li>
+                <li class="dropdown">
+                    <a href="location.html">Location</a>
+                    <div class="ddown-content">
+                        <ul>
+                            <li><a href="location.html#Seoul">Seoul</a></li>
+                            <li><a href="location.html#Gwangju">Gwangju</a></li>
+                            <li><a href="location.html#Yangsan">Yangsan</a></li>
+                            <li><a href="location.html#Sangju">Sangju</a></li>
+                        </ul>
+                    </div>    
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            </div>
+
+            <!-- Hamburger nav -->
+        
+            <div class="nav-hamburger">
+            <input type="checkbox" id="hamburger" class="input-none"/>
+            <label for="hamburger">
+                <img src="assets/icon/hamburger.png" alt="" id="ic-hamburger">
+            </label>
+
+
+            <div class="nav-hamburger-content">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="about.html">About</a>
+                    <input type="checkbox" id="dropdown-abt" class="input-none"/>
+                    <label for="dropdown-abt">
+                        <i class="fa fa-chevron-down"></i>
+                    </label>
+
+                    <ul class="nav-hamburger-subcontent">
+                        <li><a href="about.html#History">History</a></li>
+                        <li><a href="about.html#Core_Values">Core Values</a></li>
+                        <li><a href="about.html#Gallery">Gallery</a></li>
+                    </ul>
+                </li>
+                <li>
+                        <a href="#" class="nav-active">Menu</a>
+                        <input type="checkbox" id="dropdown-menu" class="input-none"/>
+                        <label for="dropdown-menu">
+                            <i class="fa fa-chevron-down"></i>
+                        </label>
+
+                        <ul class="nav-hamburger-subcontent">
+                            <li><a href="#Dishes">Dishes</a></li>
+                            <li><a href="#Beverages">Beverages</a></li>
+                            <li><a href="#Desserts">Desserts</a></li>
+                        </ul>
+                </li>
+                <li>
+                    <a href="location.html">Location</a>
+                    <input type="checkbox" id="dropdown-location" class="input-none"/>
+                    <label for="dropdown-location">
+                        <i class="fa fa-chevron-down"></i>
+                    </label>
+
+                    <ul class="nav-hamburger-subcontent">
+                        <li><a href="location.html#Seoul">Seoul</a></li>
+                        <li><a href="location.html#Gwangju">Gwangju</a></li>
+                        <li><a href="location.html#Yangsan">Yangsan</a></li>
+                        <li><a href="location.html#Sangju">Sangju</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="slideshow">
+        <img class="slide-img" src="assets/slideshow/1.png" alt="">
+        <img class="slide-img" src="assets/slideshow/2.png" alt="">
+        <img class="slide-img" src="assets/slideshow/3.png" alt="">
+    
+        <i class="fas fa-chevron-left" id="slide-left"></i>
+        <i class="fas fa-chevron-right" id="slide-right"></i>
+        <div class="circle-container">
+            <i class="fas fa-circle" id="circle-1"></i>
+            <i class="fas fa-circle" id="circle-2"></i>
+            <i class="fas fa-circle" id="circle-3"></i>
+        </div>
+    </div>
+
+    <div class="menu-bg">
+        <div class="container">
+            
+            <!-- Menu Dishes -->
+            <div id="Dishes"class="menu">
+                <h2>Dishes</h2>
+                <!-- Dishes baris 1 -->
+                <div class="menu-content">
+                    <div class="menu-one-third">
+                        <div class="menu-img-container">
+                            <img id="bibimbap" src="assets/menu/dishes/Bibimbap.png" alt="">
+                        </div>
+                        <div class="menu-det">
+                            <strong>Bibimbap</strong>
+                            <br />
+                            <p>비빔밥</p>
+                            <p>Mixed rice and vegetables.</p>
+                            <strong><p>₩ 6.000</p></strong>
+                            <div class="btn-container">
+                                <a class="button btn-order">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-one-third">
+                        <div class="menu-img-container">
+                            <img id="resize1" src="assets/menu/dishes/honeycikin.png" alt="">
+                        </div>
+                        <div class="menu-det">
+                            <strong>Dakgangjeong</strong>
+                            <br />
+                            <p>닭강정</p>
+                            <p>Deep-fried crispy fried chicken.</p>
+                            <strong><p>₩ 15.000</p></strong>
+                            <div class="btn-container">
+                                <a class="button btn-order">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-one-third">
+                        <div class="menu-img-container">
+                            <img id="resize1" src="assets/menu/dishes/kimbap.png" alt="">
+                        </div>
+                        <div class="menu-det">
+                            <strong>Kimbap</strong>
+                            <br />
+                            <p>김밥</p>
+                            <p>Seaweed-rolled cooked rice.</p>
+                            <strong><p>₩ 4.000</p></strong>
+                            <div class="btn-container">
+                                <a class="button btn-order">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dishes baris 2 -->
+                <div class="menu-content">
+                    <div class="menu-one-third">
+                        <div class="menu-img-container">
+                            <img id="kimchijjigae" src="assets/menu/dishes/KimchiJjigae.png" alt="">
+                        </div>
+                        <div class="menu-det">
+                            <strong>Kimchi Jjigae</strong>
+                            <br />
+                            <p>김치찌개</p>
+                            <p>Kimchi stew with tofu and beef.</p>
+                            <strong><p>₩ 5.800</p></strong>
+                            <div class="btn-container">
+                                <a class="button btn-order">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-one-third">
+                        <div class="menu-img-container">
+                            <img id="resize3" src="assets/menu/dishes/tteokboki.png" alt="">
+                        </div>
+                        <div class="menu-det">
+                            <strong>Tteokbokki</strong>
+                            <br />
+                            <p>떡볶이</p>
+                            <p>Stir-fried spicy rice cakes.</p>
+                            <strong><p>₩ 6.000</p></strong>
+                            <div class="btn-container">
+                                <a class="button btn-order">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Beverages -->
+            <div id="Beverages" class="menu">
+                <h2>Beverages</h2>
+                <!-- Beverages baris 1 -->
+                <div class="menu-content">
+                    <div class="menu-one-third">
+                        <div class="menu-img-container">
+                            <img id="icelatte" src="assets/menu/drinks/icedlatte.png" alt="">
+                        </div>
+                        <div class="menu-det">
+                            <strong>Iced Latte</strong>
+                            <br />
+                            <p>아이스 라떼</p>
+                            <p>Cold espresso based drink.</p>
+                            <strong><p>₩ 5.000</p></strong>
+                            <div class="btn-container">
+                                <a class="button btn-order">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-one-third">
+                        <div class="menu-img-container">
+                            <img id="matchalatte" src="assets/menu/drinks/matchamug.png" alt="">
+                        </div>
+                        <div class="menu-det">
+                            <strong>Matcha Latte</strong>
+                            <br />
+                            <p>녹차라떼</p>
+                            <p>Blend of matcha and steamed milk.</p>
+                            <strong><p>₩ 5.000</p></strong>
+                            <div class="btn-container">
+                                <a class="button btn-order">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-one-third">
+                        <div class="menu-img-container">
+                            <img id="milkis" src="assets/menu/drinks/milkis.png" alt="">
+                        </div>
+                        <div class="menu-det">
+                            <strong>Milkis</strong>
+                            <br />
+                            <p>밀키스</p>
+                            <p>Milk flavored soft drink.</p>
+                            <strong><p>₩ 4.000</p></strong>
+                            <div class="btn-container">
+                                <a class="button btn-order">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Beverages baris 2 -->
+                <div class="menu-content">
+                    <div class="menu-one-third">
+                        <div class="menu-img-container">
+                            <img id="soju" src="assets/menu/drinks/sojutransparent.png" alt="">
+                        </div>
+                        <div class="menu-det">
+                            <strong>Soju</strong>
+                            <br />
+                            <p>소주</p>
+                            <p>Alcoholic drink made from rice.</p>
+                            <strong><p>₩ 9.000</p></strong>
+                            <div class="btn-container">
+                                <a class="button btn-order">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-one-third">
+                        <div class="menu-img-container">
+                            <img id="banana" src="assets/menu/drinks/uyu.png" alt="">
+                        </div>
+                        <div class="menu-det">
+                            <strong>Banana Milk</strong>
+                            <br />
+                            <p>바나나맛 우유</p>
+                            <p>Banana flavored milk.</p>
+                            <strong><p>₩ 2.000</p></strong>
+                            <div class="btn-container">
+                                <a class="button btn-order">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Dessert -->
+            <div id="Desserts" class="menu">
+                <h2>Desserts</h2>
+                <!-- Dessert baris 1 -->
+                <div class="menu-content">    
+                    <div class="menu-one-third">
+                        <div class="menu-img-container">
+                            <img id="brownies" src="assets/menu/desserts/brownies.png" alt="">
+                        </div>
+                        <div class="menu-det">
+                            <strong>Brownies</strong>
+                            <br />
+                            <p>브라우니</p>
+                            <p>Crispy on the outside, fudgy on the inside.</p>
+                            <strong><p>₩ 5.700</p></strong>
+                            <div class="btn-container">
+                                <a class="button btn-order">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-one-third">
+                        <div class="menu-img-container">
+                            <img id="toast" src="assets/menu/desserts/toast.png" alt="">
+                        </div>
+                        <div class="menu-det">
+                            <strong>Banana Toast</strong>
+                            <br />
+                            <p>바나나 토스트</p>
+                            <p>Toasted bread topped with fresh sliced bananas.</p>
+                            <strong><p>₩ 4.000</p></strong>
+                            <div class="btn-container">
+                                <a class="button btn-order">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-one-third">
+                        <div class="menu-img-container">
+                            <img id="scake" src="assets/menu/desserts/pancake.png" alt="">
+                        </div>
+                        <div class="menu-det">
+                            <strong>Strawberry Pancake</strong>
+                            <br />
+                            <p>딸기 팬케이크</p>
+                            <p>Fluffy pancake topped with strawberries.</p>
+                            <strong><p>₩ 6.000</p></strong>
+                            <div class="btn-container">
+                                <a class="button btn-order">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dessert baris 2 -->
+                <div class="menu-content">
+                    <div class="menu-one-third">
+                        <div class="menu-img-container">
+                            <img id="patbingsoo" src="assets/menu/desserts/PatBingSoo.png" alt="">
+                        </div>
+                        <div class="menu-det">
+                            <strong>Pat Bing Soo</strong>
+                            <br />
+                            <p>팥빙수</p>
+                            <p>Red bean shaved ice with matcha.</p>
+                            <strong><p>₩ 5.500</p></strong>
+                            <div class="btn-container">
+                                <a class="button btn-order">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-one-third">
+                        <div class="menu-img-container">
+                            <img id="resize3" src="assets/menu/desserts/chocolatecake.png" alt="">
+                        </div>
+                        <div class="menu-det">
+                            <strong>Chocolate Cake</strong>
+                            <br />
+                            <p>초콜릿 케이크</p>
+                            <p>Cake flavored with melted chocolate.</p>
+                            <strong><p>₩ 6.000</p></strong>
+                            <div class="btn-container">
+                                <a class="button btn-order">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div>
+                    <div class="footer-section">
+                        <h6>DanBam</h6>
+                        <p><a href="about.html#History">History</a></p>
+                        <p><a href="about.html#Core_Values">Core Values</a></p>
+                        <p><a href="about.html#Gallery">Gallery</a></p>
+                    </div>
+                    <div class="footer-section">
+                        <h6>Menu</h6>
+                        <p><a href="menu.html#Dishes">Dishes</a></p>
+                        <p><a href="menu.html#Beverages">Beverages</a></p>
+                        <p><a href="menu.html#Desserts">Desserts</a></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-section">
+                        <h6>Location</h6>
+                        <p><a href="location.html#Seoul">Seoul</a></p>
+                        <p><a href="location.html#Gwangju">Gwangju</a></p>
+                        <p><a href="location.html#Yangsan">Yangsan</a></p>
+                        <p><a href="location.html#Sangju">Sangju</a></p>
+                    </div>
+                    <div class="footer-section">
+                        <h6>Get in Touch</h6>
+                        <p><a href="contact.html">Contact</a></p>
+                    </div> 
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social">
+                    <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="http://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p>© 2021 DanBam.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

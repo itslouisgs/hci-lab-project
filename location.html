@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Location | DanBam</title>
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/location.css">
+	<link rel="icon" href="assets/logo/icon.png" type="image/gif" sizes="20x20">
+	<link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<!-- This page shows the locations of all the DanBam restaurant branches, including the address, and the city name. On this page there will also be a map of the DanBam branch location. -->
+	<nav class="nav-scrolled">
+        <div class="container">
+            <a href="index.html" class="nav-left">
+                <img src="assets/logo/danbam.png" class="icon" alt="" href="#Home">
+                <p>DanBam</p>
+            </a>
+            <div class="nav-right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                <a href="about.html">About</a>
+                <div class="ddown-content">
+                    <ul>
+                    <li><a href="about.html#History">History</a></li>
+                    <li><a href="about.html#Core_Values">Core Values</a></li>
+                    <li><a href="about.html#Gallery">Gallery</a></li>
+                    </ul>
+                </div>      
+                </li>
+                <li class="dropdown">
+                <a href="menu.html">Menu</a>
+                <div class="ddown-content">
+                    <ul>
+                    <li><a href="menu.html#Dishes">Dishes</a></li>
+                    <li><a href="menu.html#Beverages">Beverages</a></li>
+                    <li><a href="menu.html#Desserts">Desserts</a></li>
+                    </ul>
+                </div>    
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="nav-active">Location</a>
+                    <div class="ddown-content">
+                        <ul>
+                            <li><a href="#Seoul">Seoul</a></li>
+                            <li><a href="#Gwangju">Gwangju</a></li>
+                            <li><a href="#Yangsan">Yangsan</a></li>
+                            <li><a href="#Sangju">Sangju</a></li>
+                        </ul>
+                    </div>    
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            </div>
+
+            <!-- Hamburger nav -->
+            <div class="nav-hamburger">
+                <input type="checkbox" id="hamburger" class="input-none"/>
+                <label for="hamburger">
+                    <img src="assets/icon/hamburger.png" alt="" id="ic-hamburger">
+                </label>
+
+                <div class="nav-hamburger-content">
+                    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="about.html">About</a>
+                        <input type="checkbox" id="dropdown-abt" class="input-none"/>
+                        <label for="dropdown-abt">
+                            <i class="fa fa-chevron-down"></i>
+                        </label>
+
+                        <ul class="nav-hamburger-subcontent">
+                            <li><a href="about.html#History">History</a></li>
+                            <li><a href="about.html#Core_Values">Core Values</a></li>
+                            <li><a href="about.html#Gallery">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                            <a href="menu.html">Menu</a>
+                            <input type="checkbox" id="dropdown-menu" class="input-none"/>
+                            <label for="dropdown-menu">
+                                <i class="fa fa-chevron-down"></i>
+                            </label>
+
+                            <ul class="nav-hamburger-subcontent">
+                                <li><a href="menu.html#Dishes">Dishes</a></li>
+                                <li><a href="menu.html#Beverages">Beverages</a></li>
+                                <li><a href="menu.html#Desserts">Desserts</a></li>
+                            </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-active">Location</a>
+                        <input type="checkbox" id="dropdown-location" class="input-none"/>
+                        <label for="dropdown-location">
+                            <i class="fa fa-chevron-down"></i>
+                        </label>
+
+                        <ul class="nav-hamburger-subcontent">
+                            <li><a href="#Seoul">Seoul</a></li>
+                            <li><a href="#Gwangju">Gwangju</a></li>
+                            <li><a href="#Yangsan">Yangsan</a></li>
+                            <li><a href="#Sangju">Sangju</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="banner banner-red">
+        <div class="container">
+            <div class="banner-red-content">
+                <h2>Our Restaurant Outlets</h2>
+                <h4 class="desc">Find our restaurant outlets across South Korea.</h4>
+            </div>
+        </div>
+    </div>
+    
+    <div class="location-container">
+        <div class="container">
+            <div id="Seoul" class="location-list">
+                <div class="contact-info">
+                    <h2>Seoul</h2>
+                    <div class="contact-flex">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>57-26 Itaewon 1(il)-dong, Yongsan-gu, Seoul, South Korea</p>
+                    </div>
+                    <div class="contact-flex">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+82 100-5555-8181</p>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.243162157651!2d126.98728067701747!3d37.53458037635295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3708d1d7d1f%3A0xb2011902448600b6!2sDanbam!5e0!3m2!1sen!2sid!4v1617202702227!5m2!1sen!2sid" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="Gwangju" class="location-list">
+                <div class="contact-info">
+                    <h2>Gwangju</h2>
+                    <div class="contact-flex">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>789-1 Unnam-dong, Gwangsan-gu, Gwangju, South Korea</p>
+                    </div>
+                    <div class="contact-flex">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+82 62-956-5792</p>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1506.4262777308581!2d126.80931201254455!3d35.18429635797747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x68ea6757032f9c67!2sDanbam!5e0!3m2!1sen!2sid!4v1621694758535!5m2!1sen!2sid" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="Yangsan" class="location-list">
+                <div class="contact-info">
+                    <h2>Yangsan</h2>
+                    <div class="contact-flex">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>600 Pyeongsan-dong, Yangsan-si, Gyeongsangnam-do, South Korea</p>
+                    </div>
+                    <div class="contact-flex">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+82 55-381-5999</p>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2945.2076331537114!2d129.14444784769103!3d35.3802280369098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7524b79e185eb519!2z64uo67Ck7Yis7Y-s7LCo!5e0!3m2!1sen!2sid!4v1621694653627!5m2!1sen!2sid" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="Sangju" class="location-list">
+                <div class="contact-info">
+                    <h2>Sangju</h2>
+                    <div class="contact-flex">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>281-3 Muyang-dong, Sangju-si, Gyeongsangbuk-do, South Korea</p>
+                    </div>
+                    <div class="contact-flex">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+82 54-535-9717</p>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2938.780781970834!2d128.15264759185118!3d36.41801268000679!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xedb2c11d6ee65af7!2sDanbam!5e0!3m2!1sen!2sid!4v1621694598216!5m2!1sen!2sid" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div>
+                    <div class="footer-section">
+                        <h6>DanBam</h6>
+                        <p><a href="about.html#History">History</a></p>
+                        <p><a href="about.html#Core_Values">Core Values</a></p>
+                        <p><a href="about.html#Gallery">Gallery</a></p>
+                    </div>
+                    <div class="footer-section">
+                        <h6>Menu</h6>
+                        <p><a href="menu.html#Dishes">Dishes</a></p>
+                        <p><a href="menu.html#Beverages">Beverages</a></p>
+                        <p><a href="menu.html#Desserts">Desserts</a></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-section">
+                        <h6>Location</h6>
+                        <p><a href="location.html#Seoul">Seoul</a></p>
+                        <p><a href="location.html#Gwangju">Gwangju</a></p>
+                        <p><a href="location.html#Yangsan">Yangsan</a></p>
+                        <p><a href="location.html#Sangju">Sangju</a></p>
+                    </div>
+                    <div class="footer-section">
+                        <h6>Get in Touch</h6>
+                        <p><a href="contact.html">Contact</a></p>
+                    </div> 
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social">
+                    <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="http://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p>© 2021 DanBam.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

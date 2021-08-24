@@ -1,0 +1,191 @@
+.banner-about{
+    background: url("../assets/banner3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    height: 32vw;
+}
+
+.about-bw{
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.about-p-left{
+    margin: 0 10% 0 0;
+}
+
+.about-img-resp{
+    display: none;
+}
+
+.about-gallery{
+    background-color: #202020;
+    padding: 6.5% 0;
+    text-align: center;
+    height: 100%;
+    color: #fff;
+    align-items: center;
+}
+
+.about-gallery .container{
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.about-gallery-p h3{
+    padding-bottom: 2em;
+}
+
+.img-container{
+    padding: 0.5em 0;
+    /* width: 80%; */
+    margin: 0 7.5%;
+}
+
+.col-1{
+    width: 30%;
+    padding: 0 0.75em 0.75em 0;
+}
+
+.col-1:last-child{
+    padding-right: 0;
+}
+
+.about-social{
+    padding: 6.5% 10%;
+    background-color: #b03434;
+    color: #fff;
+    text-align: center;
+}
+
+.social-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+
+.follow-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.follow-social:hover{
+    opacity: 0.65;
+    color: #fff;
+}
+
+.follow-social i{
+    font-size: 36px;
+    padding-right: 0.25em;
+}
+
+.social-h3{
+    text-align: left;
+    padding-bottom: 1.25em;
+    font-size: 2rem;
+    max-width: 900px;
+}
+
+.follow-social a{
+    color: #fff;
+}
+
+@media only screen and (max-width: 969px){
+    .about-social{
+        padding: 6.5% 5%;
+    }
+
+    .social-h3{
+        width: 100%;
+        max-width: 700px;
+        font-size: 1.75rem;
+    }
+
+    .follow-social img{
+        width: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 969px) {
+    .banner-about{
+        background-size: 120vw;
+        height: 45vw;
+    }
+
+    .about-p-left{
+        margin-right: 5%;
+    }
+
+    .img-container{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner-about{
+        background-position: center;
+        height: 60vh;
+    }
+
+    .about-img-resp{
+        display: block;
+    }
+
+    .about-img-tmp{
+        display: none;
+    }
+
+    .about-top{
+        padding-bottom: 0 !important;
+    }
+
+    .img-container{
+        width: 100%;
+        margin: 0;
+    }
+
+    .col-1{
+        width: 32%;
+        /* padding: 0 0.1em 0.1em 0; */
+        padding: 0;
+    }
+
+    .social-container{
+        display: block;
+    }
+
+    .about-social{
+        padding: 10% 6.5%;
+    }
+
+    .about-social-container{
+        max-width: 525px;
+        margin: 0 auto;
+    }
+
+    .social-h3{
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    .follow-social{
+        justify-content: left;
+        text-align: left;
+        vertical-align: middle;
+        padding-bottom: 0.5em;
+    }
+
+    .social-h3{
+        padding-bottom: 1.5em;
+    }
+
+    .follow-social i{
+        font-size: 24px;
+        width: 1.5em;
+        text-align:center;
+    }
+}
